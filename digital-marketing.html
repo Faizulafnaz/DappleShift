@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Marketing Services | Dapple Shift</title>
+  <meta name="description" content="Comprehensive digital marketing services including SEO optimization, social media marketing, Google PPC campaigns, and content marketing to boost your online presence.">
+  <meta name="keywords" content="digital marketing, SEO services, social media marketing, PPC campaigns, content marketing, online marketing">
+  <link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.svg" />
+  <link rel="stylesheet" href="assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/libs/aos-master/dist/aos.css">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <style>
+    /* Modern Service Detail Page Styling */
+    .service-detail-modern {
+      background: #fff;
+    }
+    
+    .service-info-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .service-info-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+    }
+    
+    .service-icon-wrapper {
+      transition: transform 0.3s ease;
+    }
+    
+    .service-info-card:hover .service-icon-wrapper {
+      transform: scale(1.1);
+    }
+    
+    .service-section-modern {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .service-feature-card {
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0,0,0,0.08) !important;
+    }
+    
+    .service-feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12) !important;
+      border-color: rgba(0,0,0,0.15) !important;
+    }
+    
+    .feature-icon {
+      transition: transform 0.3s ease;
+    }
+    
+    .service-feature-card:hover .feature-icon {
+      transform: scale(1.15) rotate(5deg);
+    }
+    
+    .tech-category-card {
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0,0,0,0.08) !important;
+    }
+    
+    .tech-category-card:hover {
+      transform: translateX(5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+      border-color: rgba(0,0,0,0.15) !important;
+    }
+    
+    .process-step-card {
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0,0,0,0.08) !important;
+    }
+    
+    .process-step-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.12) !important;
+    }
+    
+    .process-step-number {
+      transition: transform 0.3s ease;
+    }
+    
+    .process-step-card:hover .process-step-number {
+      transform: scale(1.1) rotate(5deg);
+    }
+    
+    .cta-section-modern .btn {
+      transition: all 0.3s ease;
+    }
+    
+    .cta-section-modern .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+    }
+    
+    .section-number {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    @media (max-width: 768px) {
+      .service-section-modern {
+        padding: 2rem !important;
+      }
+      
+      .service-info-card,
+      .service-feature-card,
+      .tech-category-card,
+      .process-step-card {
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+    <div class="container">
+      <div class="header-wrapper d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html" class="logo-white">
+            <img src="assets/images/logos/Dappl 1.svg" alt="logo" class="img-fluid">
+          </a>
+          <a href="index.html" class="logo-dark">
+            <img src="assets/images/logos/Dappl 1.svg" alt="logo" class="img-fluid">
+          </a>
+        </div>
+        <div class="d-flex align-items-center gap-4 nav-menu">
+          <div class="btn-group">
+            <button
+              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+              type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+              <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end p-4">
+              <div class="d-flex flex-column gap-6">
+                <div class="hstack justify-content-between border-bottom pb-6">
+                  <p class="mb-0 fs-5 text-dark">Menu</p>
+                  <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                  <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                    <li class="header-item">
+                      <a href="index.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Home</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">About</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="services.html" class="active header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Services</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="projects.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Projects</a>
+                    </li>
+                    <li class="header-item">
+                      <a href="contact.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
+                          src="assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                          class="img-fluid animate-spin">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <a class="text-dark" href="tel:+1-555-123-4567">+1-555-123-4567</a>
+                  <a class="fs-8 text-dark fw-bold" href="mailto:info@dappleshift.com">info@dappleshift.com</a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--  Page Wrapper -->
+  <div class="page-wrapper overflow-hidden">
+
+    <!--  Banner Section -->
+    <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
+      style="background-image: url(assets/images/backgrounds/about-banner.webp);">
+      <div class="container">
+        <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
+          <div class="row align-items-center">
+            <div class="col-xl-4">
+              <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="1000">
+                <img src="assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
+                <p class="mb-0 text-white fs-5 text-opacity-70">Strategic <span class="text-primary">digital marketing</span> solutions to boost your online presence and drive business growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <h1 class="mb-0 fs-16 text-white lh-1">Digital Marketing</h1>
+            <a href="contact.html" class="p-1 ps-7 bg-primary rounded-pill">
+              <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
+                <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Service Detail Section -->
+    <section class="service-detail-modern py-5 py-lg-11 py-xl-12">
+      <div class="container">
+        <!-- Back Button -->
+        <div class="mb-6 mb-lg-8" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+          <a href="services.html" class="btn py-2 ps-3 pe-5 d-inline-flex align-items-center gap-2">
+            <iconify-icon icon="lucide:arrow-left" class="fs-6"></iconify-icon>
+            <span class="btn-text">Back to Services</span>
+          </a>
+        </div>
+
+        <!-- Key Info Cards -->
+        <div class="row g-4 mb-8 mb-lg-10" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          <div class="col-md-4">
+            <div class="service-info-card h-100 p-4 p-lg-5 rounded-4 border bg-white shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="service-icon-wrapper bg-primary bg-opacity-10 rounded-circle p-3">
+                  <iconify-icon icon="lucide:trending-up" class="fs-6 text-primary"></iconify-icon>
+                </div>
+                <h5 class="mb-0 fw-bold">Technologies</h5>
+              </div>
+              <p class="mb-0 fs-5 text-dark text-opacity-70">SEO, Social Media, PPC, Content Marketing</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-info-card h-100 p-4 p-lg-5 rounded-4 border bg-white shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="service-icon-wrapper bg-primary bg-opacity-10 rounded-circle p-3">
+                  <iconify-icon icon="lucide:clock" class="fs-6 text-primary"></iconify-icon>
+                </div>
+                <h5 class="mb-0 fw-bold">Delivery Time</h5>
+              </div>
+              <p class="mb-0 fs-5 text-dark fw-medium">3-6 months</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-info-card h-100 p-4 p-lg-5 rounded-4 border bg-white shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="service-icon-wrapper bg-primary bg-opacity-10 rounded-circle p-3">
+                  <iconify-icon icon="lucide:bar-chart" class="fs-6 text-primary"></iconify-icon>
+                </div>
+                <h5 class="mb-0 fw-bold">Support</h5>
+              </div>
+              <p class="mb-0 fs-5 text-dark fw-medium">Monthly Analytics</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Overview Section with Background -->
+        <section class="service-section-modern bg-light rounded-5 p-5 p-lg-8 mb-8 mb-lg-10" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="section-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 48px; height: 48px; font-size: 1.25rem;">01</div>
+                <h2 class="mb-0 fs-13">Overview</h2>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <p class="fs-5 mb-0 lh-lg text-dark text-opacity-80">
+                We offer comprehensive digital marketing services including SEO optimization, social media marketing, Google PPC campaigns, and content marketing to improve your online presence and drive qualified traffic to your business.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- What We Offer Section -->
+        <section class="mb-8 mb-lg-10" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
+          <div class="d-flex align-items-center gap-3 mb-5 mb-lg-6">
+            <div class="section-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 48px; height: 48px; font-size: 1.25rem;">02</div>
+            <h2 class="mb-0 fs-13">What We Offer</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="service-feature-card h-100 p-4 p-lg-5 bg-white border rounded-4 shadow-sm">
+                <div class="feature-icon mb-3">
+                  <iconify-icon icon="lucide:search" class="fs-8 text-primary"></iconify-icon>
+                </div>
+                <h5 class="mb-3 fw-bold">SEO Optimization</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">On-page and off-page optimization for better rankings</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="service-feature-card h-100 p-4 p-lg-5 bg-white border rounded-4 shadow-sm">
+                <div class="feature-icon mb-3">
+                  <iconify-icon icon="lucide:share-2" class="fs-8 text-primary"></iconify-icon>
+                </div>
+                <h5 class="mb-3 fw-bold">Social Media Marketing</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Strategy and management across all platforms</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="service-feature-card h-100 p-4 p-lg-5 bg-white border rounded-4 shadow-sm">
+                <div class="feature-icon mb-3">
+                  <iconify-icon icon="lucide:mouse-pointer-click" class="fs-8 text-primary"></iconify-icon>
+                </div>
+                <h5 class="mb-3 fw-bold">PPC Campaigns</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Google Ads and targeted advertising for maximum ROI</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="service-feature-card h-100 p-4 p-lg-5 bg-white border rounded-4 shadow-sm">
+                <div class="feature-icon mb-3">
+                  <iconify-icon icon="lucide:file-text" class="fs-8 text-primary"></iconify-icon>
+                </div>
+                <h5 class="mb-3 fw-bold">Content Marketing</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Blog writing, articles, and content strategy</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="service-feature-card h-100 p-4 p-lg-5 bg-white border rounded-4 shadow-sm">
+                <div class="feature-icon mb-3">
+                  <iconify-icon icon="lucide:mail" class="fs-8 text-primary"></iconify-icon>
+                </div>
+                <h5 class="mb-3 fw-bold">Email Marketing</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Campaign design and automation</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="service-feature-card h-100 p-4 p-lg-5 bg-white border rounded-4 shadow-sm">
+                <div class="feature-icon mb-3">
+                  <iconify-icon icon="lucide:map-pin" class="fs-8 text-primary"></iconify-icon>
+                </div>
+                <h5 class="mb-3 fw-bold">Local SEO</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Optimizing for local search results</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="service-feature-card h-100 p-4 p-lg-5 bg-white border rounded-4 shadow-sm">
+                <div class="feature-icon mb-3">
+                  <iconify-icon icon="lucide:trending-up" class="fs-8 text-primary"></iconify-icon>
+                </div>
+                <h5 class="mb-3 fw-bold">Conversion Optimization</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Improving website conversions and user experience</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="service-feature-card h-100 p-4 p-lg-5 bg-white border rounded-4 shadow-sm">
+                <div class="feature-icon mb-3">
+                  <iconify-icon icon="lucide:bar-chart" class="fs-8 text-primary"></iconify-icon>
+                </div>
+                <h5 class="mb-3 fw-bold">Analytics & Reporting</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Monthly performance reports and insights</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services Include Section -->
+        <section class="service-section-modern bg-light rounded-5 p-5 p-lg-8 mb-8 mb-lg-10" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+          <div class="d-flex align-items-center gap-3 mb-5 mb-lg-6">
+            <div class="section-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 48px; height: 48px; font-size: 1.25rem;">03</div>
+            <h2 class="mb-0 fs-13">Our Services Include</h2>
+          </div>
+          <p class="fs-5 mb-5 text-dark text-opacity-80">
+            Our comprehensive digital marketing approach covers:
+          </p>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="tech-category-card p-4 p-lg-5 bg-white border rounded-4 h-100">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <iconify-icon icon="lucide:search" class="fs-7 text-primary"></iconify-icon>
+                  <h5 class="mb-0 fw-bold">SEO Services</h5>
+                </div>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Keyword research, on-page optimization, link building, technical SEO audits</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tech-category-card p-4 p-lg-5 bg-white border rounded-4 h-100">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <iconify-icon icon="lucide:share-2" class="fs-7 text-primary"></iconify-icon>
+                  <h5 class="mb-0 fw-bold">Social Media</h5>
+                </div>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Facebook, Instagram, Twitter, LinkedIn marketing and management</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tech-category-card p-4 p-lg-5 bg-white border rounded-4 h-100">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <iconify-icon icon="lucide:mouse-pointer-click" class="fs-7 text-primary"></iconify-icon>
+                  <h5 class="mb-0 fw-bold">PPC Advertising</h5>
+                </div>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Google Ads, Bing Ads, social media advertising campaigns</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="tech-category-card p-4 p-lg-5 bg-white border rounded-4 h-100">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <iconify-icon icon="lucide:file-text" class="fs-7 text-primary"></iconify-icon>
+                  <h5 class="mb-0 fw-bold">Content Strategy</h5>
+                </div>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Content planning, creation, and distribution</p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="tech-category-card p-4 p-lg-5 bg-white border rounded-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <iconify-icon icon="lucide:bar-chart" class="fs-7 text-primary"></iconify-icon>
+                  <h5 class="mb-0 fw-bold">Analytics</h5>
+                </div>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Google Analytics setup, tracking, and performance monitoring</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="mb-8 mb-lg-10" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000">
+          <div class="d-flex align-items-center gap-3 mb-5 mb-lg-6">
+            <div class="section-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 48px; height: 48px; font-size: 1.25rem;">04</div>
+            <h2 class="mb-0 fs-13">Our Process</h2>
+          </div>
+          <p class="fs-5 mb-5 mb-lg-6 text-dark text-opacity-80">
+            We follow a strategic approach to ensure measurable results:
+          </p>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="process-step-card p-4 p-lg-5 bg-white border rounded-4 shadow-sm h-100 position-relative">
+                <div class="process-step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mb-4" style="width: 40px; height: 40px;">1</div>
+                <h5 class="mb-3 fw-bold">Audit & Analysis</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Comprehensive review of your current digital presence</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="process-step-card p-4 p-lg-5 bg-white border rounded-4 shadow-sm h-100 position-relative">
+                <div class="process-step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mb-4" style="width: 40px; height: 40px;">2</div>
+                <h5 class="mb-3 fw-bold">Strategy Development</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Creating a customized marketing strategy aligned with your goals</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="process-step-card p-4 p-lg-5 bg-white border rounded-4 shadow-sm h-100 position-relative">
+                <div class="process-step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mb-4" style="width: 40px; height: 40px;">3</div>
+                <h5 class="mb-3 fw-bold">Implementation</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Executing campaigns across selected channels</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="process-step-card p-4 p-lg-5 bg-white border rounded-4 shadow-sm h-100 position-relative">
+                <div class="process-step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mb-4" style="width: 40px; height: 40px;">4</div>
+                <h5 class="mb-3 fw-bold">Monitoring & Optimization</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Continuous tracking and improvement of campaigns</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="process-step-card p-4 p-lg-5 bg-white border rounded-4 shadow-sm h-100 position-relative">
+                <div class="process-step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mb-4" style="width: 40px; height: 40px;">5</div>
+                <h5 class="mb-3 fw-bold">Reporting</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Monthly reports with insights and recommendations</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="process-step-card p-4 p-lg-5 bg-white border rounded-4 shadow-sm h-100 position-relative">
+                <div class="process-step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mb-4" style="width: 40px; height: 40px;">6</div>
+                <h5 class="mb-3 fw-bold">Growth & Scaling</h5>
+                <p class="mb-0 fs-5 text-dark text-opacity-70">Expanding successful strategies for maximum impact</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Enhanced CTA Section -->
+        <section class="cta-section-modern" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+          <div class="bg-primary rounded-5 p-5 p-lg-8 position-relative overflow-hidden">
+            <div class="position-absolute top-0 end-0 opacity-25" style="width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%); transform: translate(30%, -30%);"></div>
+            <div class="row align-items-center position-relative">
+              <div class="col-lg-8 mb-4 mb-lg-0">
+                <h3 class="mb-3 text-dark fw-bold fs-10">Ready to grow your online presence?</h3>
+                <p class="mb-0 fs-5 text-dark text-opacity-80 lh-lg">Let's discuss your marketing goals and create a strategy that drives results. Our team is ready to boost your digital presence.</p>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a href="contact.html" class="btn btn-lg bg-dark text-white px-5 py-3 rounded-pill d-inline-flex align-items-center gap-2 shadow-lg">
+                  <span>Get Started</span>
+                  <iconify-icon icon="lucide:arrow-up-right" class="fs-6"></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 mb-8 mb-xl-0">
+          <div class="d-flex flex-column gap-8 pe-xl-5">
+            <h2 class="mb-0 text-white">Ready to transform your digital presence?</h2>
+            <div class="d-flex flex-column gap-2">
+              <a href="mailto:info@dappleshift.com" target="_blank" class="link-hover hstack gap-3 text-white fs-5">
+                <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
+                info@dappleshift.com
+              </a>
+              <a href="+97471182877" target="_blank"
+                class="link-hover hstack gap-3 text-white fs-5">
+                <iconify-icon icon="lucide:phone" class="fs-7 text-primary"></iconify-icon>
+                +97471182877
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+            <li><a class="link-hover fs-5 text-white" href="index.html">Home</a></li>
+            <li><a class="link-hover fs-5 text-white" href="about-us.html">About</a></li>
+            <li><a class="link-hover fs-5 text-white" href="services.html">Services</a></li>
+            <li><a class="link-hover fs-5 text-white" href="projects.html">Projects</a></li>
+            <li><a class="link-hover fs-5 text-white" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
+          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+            <li><a class="link-hover fs-5 text-white" href="#!">Facebook</a></li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Instagram</a></li>
+            <li><a class="link-hover fs-5 text-white" href="#!">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
+          <div class="d-flex flex-column gap-3 text-md-end">
+            <div class="dropdown">
+              <button class="btn btn-link text-white text-decoration-none p-0 d-flex align-items-center gap-2 justify-content-md-end" type="button" id="countryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <iconify-icon icon="lucide:globe" class="fs-6"></iconify-icon>
+                <span class="fs-5">Select Country</span>
+                <iconify-icon icon="lucide:chevron-down" class="fs-6"></iconify-icon>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="countryDropdown">
+                <li><a class="dropdown-item d-flex align-items-center gap-2" href="index.html"><span>🌐</span> International</a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2" href="index-qatar.html"><span>🇶🇦</span> Qatar</a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2" href="index-uae.html"><span>🇦🇪</span> UAE</a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2" href="index-saudi.html"><span>🇸🇦</span> Saudi Arabia</a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2" href="index-india.html"><span>🇮🇳</span> India</a></li>
+                <li><a class="dropdown-item d-flex align-items-center gap-2" href="index-uk.html"><span>🇬🇧</span> UK</a></li>
+              </ul>
+            </div>
+            <p class="mb-0 text-white text-opacity-70">© Dapple Shift copyright 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="get-template hstack gap-2">
+    <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+      id="scrollToTopBtn">
+      <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
+    </button>
+  </div>
+
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="assets/libs/aos-master/dist/aos.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
+
