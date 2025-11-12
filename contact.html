@@ -81,7 +81,7 @@
 
     <!--  Banner Section -->
     <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
-      style="background-image: url(assets/images/backgrounds/contact-banner.jpg);">
+      style="background-image: url(assets/images/backgrounds/about-banner.webp);">
       <div class="container">
         <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
           <div class="row align-items-center">
@@ -138,20 +138,21 @@
                 ears.</p>
             </div>
             <div class="col-xl-8">
-              <form class="d-flex flex-column gap-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              <form id="contactForm" class="d-flex flex-column gap-7" method="POST" action="contact.php" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div id="formMessage" class="alert d-none" role="alert"></div>
                 <div>
-                  <input type="text" class="form-control border-bottom border-dark" id="formGroupExampleInput"
-                    placeholder="Name">
+                  <input type="text" name="name" class="form-control border-bottom border-dark" id="formGroupExampleInput"
+                    placeholder="Name" required>
                 </div>
                 <div>
-                  <input type="email" class="form-control border-bottom border-dark" id="exampleInputEmail1"
-                    placeholder="Email" aria-describedby="emailHelp">
+                  <input type="email" name="email" class="form-control border-bottom border-dark" id="exampleInputEmail1"
+                    placeholder="Email" aria-describedby="emailHelp" required>
                 </div>
                 <div>
-                  <textarea class="form-control border-bottom border-dark" id="exampleFormControlTextarea1"
-                    placeholder="Tell us about your project" rows="3"></textarea>
+                  <textarea name="message" class="form-control border-bottom border-dark" id="exampleFormControlTextarea1"
+                    placeholder="Tell us about your project" rows="3" required></textarea>
                 </div>
-                <button type="submit" class="btn w-100 justify-content-center">
+                <button type="submit" class="btn w-100 justify-content-center" id="submitBtn">
                   <span class="btn-text">Submit message</span>
                   <iconify-icon icon="lucide:arrow-up-right"
                     class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -170,16 +171,16 @@
       <div class="row">
         <div class="col-xl-5 mb-8 mb-xl-0">
           <div class="d-flex flex-column gap-8 pe-xl-5">
-            <h2 class="mb-0 text-white">Build something together?</h2>
+            <h2 class="mb-0 text-white">Ready to transform your digital presence?</h2>
             <div class="d-flex flex-column gap-2">
-              <a href="https://www.wrappixel.com/" target="_blank" class="link-hover hstack gap-3 text-white fs-5">
+              <a href="mailto:info@dappleshift.com" target="_blank" class="link-hover hstack gap-3 text-white fs-5">
                 <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
-                info@wrappixel.com
+                info@dappleshift.com
               </a>
-              <a href="https://maps.app.goo.gl/hpDp81fqzGt5y4bC8" target="_blank"
+              <a href="+97471182877" target="_blank"
                 class="link-hover hstack gap-3 text-white fs-5">
-                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon>
-                info@wrappixel.com
+                <iconify-icon icon="lucide:phone" class="fs-7 text-primary"></iconify-icon>
+                +97471182877
               </a>
             </div>
           </div>
@@ -188,11 +189,8 @@
           <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
             <li><a class="link-hover fs-5 text-white" href="index.html">Home</a></li>
             <li><a class="link-hover fs-5 text-white" href="about-us.html">About</a></li>
-            <li><a class="link-hover fs-5 text-white" id="services" href="#services">Services</a></li>
-            <li><a class="link-hover fs-5 text-white" href="projects.html">Work</a></li>
-            <li><a class="link-hover fs-5 text-white" href="terms-and-conditions.html">Terms</a></li>
-            <li><a class="link-hover fs-5 text-white" href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a class="link-hover fs-5 text-white" href="404.html">Error 404</a></li>
+            <li><a class="link-hover fs-5 text-white" href="projects.html">Projects</a></li>
+            <li><a class="link-hover fs-5 text-white" href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
@@ -203,11 +201,10 @@
           </ul>
         </div>
         <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
-          <p class="mb-0 text-white text-opacity-70 text-md-end">© Studiova copyright 2025</p>
+          <p class="mb-0 text-white text-opacity-70 text-md-end">© Dapple Shift copyright 2025</p>
         </div>
       </div>
     </div>
-  <p class="mb-0 text-white text-opacity-70 text-md-center mt-10">Distributed by <a class="text-white" href="https://www.themewagon.com" target="_blank">ThemeWagon</a></p>
   </footer>
 
   <div class="get-template hstack gap-2">
@@ -226,6 +223,62 @@
   <script src="assets/js/custom.js"></script>
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  
+  <!-- Contact Form Handler -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const form = this;
+      const submitBtn = document.getElementById('submitBtn');
+      const messageDiv = document.getElementById('formMessage');
+      const originalBtnText = submitBtn.querySelector('.btn-text').textContent;
+      
+      // Disable submit button
+      submitBtn.disabled = true;
+      submitBtn.querySelector('.btn-text').textContent = 'Sending...';
+      
+      // Hide previous messages
+      messageDiv.classList.add('d-none');
+      
+      // Get form data
+      const formData = new FormData(form);
+      
+      // Send AJAX request
+      fetch('contact.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Show message
+        messageDiv.classList.remove('d-none');
+        messageDiv.classList.remove('alert-success', 'alert-danger');
+        
+        if (data.success) {
+          messageDiv.classList.add('alert-success');
+          messageDiv.textContent = data.message;
+          form.reset();
+        } else {
+          messageDiv.classList.add('alert-danger');
+          messageDiv.textContent = data.message;
+        }
+        
+        // Scroll to message
+        messageDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      })
+      .catch(error => {
+        messageDiv.classList.remove('d-none');
+        messageDiv.classList.add('alert-danger');
+        messageDiv.textContent = 'An error occurred. Please try again later.';
+      })
+      .finally(() => {
+        // Re-enable submit button
+        submitBtn.disabled = false;
+        submitBtn.querySelector('.btn-text').textContent = originalBtnText;
+      });
+    });
+  </script>
 </body>
 
 </html>
